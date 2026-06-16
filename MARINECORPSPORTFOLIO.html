@@ -1,0 +1,411 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Marine Corps Cyber Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Orbitron',sans-serif;
+}
+
+body{
+    background:#030712;
+    color:#ffffff;
+    min-height:100vh;
+    padding:30px;
+    overflow-x:hidden;
+}
+
+/* Cyber Grid Background */
+body::before{
+    content:'';
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:
+    linear-gradient(rgba(0,255,255,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,255,.05) 1px, transparent 1px);
+    background-size:40px 40px;
+    z-index:-2;
+}
+
+body::after{
+    content:'';
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:
+    radial-gradient(circle at top left,#00ffff22,transparent 40%),
+    radial-gradient(circle at bottom right,#0080ff22,transparent 40%);
+    z-index:-1;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:40px;
+    padding:30px;
+    border:1px solid #00ffff;
+    border-radius:20px;
+    background:rgba(10,20,40,.85);
+    box-shadow:0 0 25px #00ffff55;
+}
+
+.header h1{
+    color:#00ffff;
+    font-size:3rem;
+    text-shadow:0 0 20px #00ffff;
+}
+
+.header p{
+    margin-top:10px;
+    color:#9fdfff;
+}
+
+.section{
+    background:rgba(10,20,40,.85);
+    border:1px solid #00ffff55;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 0 15px rgba(0,255,255,.2);
+}
+
+.section h2{
+    color:#00ffff;
+    margin-bottom:15px;
+    border-left:5px solid #00ffff;
+    padding-left:10px;
+}
+
+.profile{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.profile img{
+    width:220px;
+    border-radius:15px;
+    border:2px solid #00ffff;
+    box-shadow:0 0 20px #00ffff;
+}
+
+.info{
+    flex:1;
+}
+
+.info p{
+    margin-bottom:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th{
+    background:#00ffff;
+    color:#03111f;
+}
+
+table th,
+table td{
+    border:1px solid #00ffff;
+    padding:12px;
+}
+
+ul,ol{
+    padding-left:25px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+form{
+    margin-top:15px;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+select,
+textarea{
+    width:100%;
+    background:#07111f;
+    color:white;
+    border:1px solid #00ffff;
+    padding:12px;
+    border-radius:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+textarea{
+    height:150px;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    outline:none;
+    box-shadow:0 0 15px #00ffff;
+}
+
+.radio-group,
+.checkbox-group{
+    margin-bottom:15px;
+}
+
+.radio-group label,
+.checkbox-group label{
+    display:block;
+    margin:8px 0;
+}
+
+.btn{
+    background:#00ffff;
+    color:#03111f;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-right:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px #00ffff;
+}
+
+a{
+    color:#00ffff;
+    text-decoration:none;
+}
+
+a:hover{
+    text-shadow:0 0 10px #00ffff;
+}
+
+.status{
+    text-align:center;
+    margin-top:15px;
+    color:#00ffff;
+    animation:blink 2s infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity:.4;
+    }
+}
+
+@media(max-width:768px){
+
+.profile{
+    flex-direction:column;
+    text-align:center;
+}
+
+.header h1{
+    font-size:2rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+    <h1>MARINE CORPS CYBER PORTFOLIO</h1>
+    <p>Communications • Electronics • Information Systems Personnel</p>
+    <div class="status">[ SYSTEM STATUS : ONLINE ]</div>
+</div>
+
+<div class="section">
+    <h2>Personal Information</h2>
+
+    <div class="profile">
+
+        <img src="jose b yan.jpg" alt="Profile">
+
+        <div class="info">
+            <p><strong>Full Name:</strong> Eric M Enot 951530 PN(M)</p>
+            <p><strong>Position:</strong> Communications, Electronics and Information System Personnel G6</p>
+            <p><strong>Department:</strong> G6, 2MBDE</p>
+            <p><strong>Email:</strong> ricenote08@gmail.com</p>
+            <p><strong>Contact Number:</strong> 0956-390-8050</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="section">
+    <h2>Career Objective</h2>
+    <p>
+    Personnel objectives center on establishing,
+    managing and securing communication,
+    electronics and information systems
+    to support command and military operations.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Educational Background</h2>
+    <ul>
+        <li>Computer System Servicing NCII</li>
+        <li>Computer Technician Work Experience - 8 Years</li>
+        <li>Graduate of Secondary Education</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Work Experience</h2>
+
+    <table>
+        <tr>
+            <th>Position</th>
+            <th>Company / Agency</th>
+            <th>Year</th>
+        </tr>
+
+        <tr>
+            <td>Computer Technician</td>
+            <td>Greenhills Shopping Center</td>
+            <td>2012 - Present</td>
+        </tr>
+    </table>
+</div>
+
+<div class="section">
+    <h2>Skills</h2>
+
+    <ul>
+        <li>Microsoft Office</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Database Management</li>
+        <li>Technical Support</li>
+        <li>Report Writing</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Training and Seminars</h2>
+
+    <table>
+        <tr>
+            <th>Training</th>
+            <th>Date</th>
+            <th>Organizer</th>
+        </tr>
+
+        <tr>
+            <td>Computer Technician</td>
+            <td>Since 2012</td>
+            <td>Manila Computer Colleges</td>
+        </tr>
+    </table>
+</div>
+
+<div class="section">
+    <h2>Achievements</h2>
+
+    <ol>
+        <li>MMM</li>
+        <li>MCM</li>
+        <li>Bronze Medal</li>
+    </ol>
+</div>
+
+<div class="section">
+    <h2>Contact Form</h2>
+
+    <form>
+
+        <label>First Name</label>
+        <input type="text">
+
+        <label>Email Address</label>
+        <input type="email">
+
+        <label>Contact Number</label>
+        <input type="number">
+
+        <div class="radio-group">
+            <strong>Purpose of Inquiry</strong>
+
+            <label><input type="radio" name="purpose"> Employment Verification</label>
+            <label><input type="radio" name="purpose"> Official Business</label>
+            <label><input type="radio" name="purpose"> Other</label>
+        </div>
+
+        <div class="checkbox-group">
+            <strong>Services Needed</strong>
+
+            <label><input type="checkbox"> Consultation</label>
+            <label><input type="checkbox"> Documentation</label>
+            <label><input type="checkbox"> Technical Assistance</label>
+        </div>
+
+        <label>Select Department</label>
+
+        <select>
+            <option>ADMIN</option>
+            <option>INTEL</option>
+            <option>OPERATION</option>
+            <option>LOGISTICS</option>
+            <option>CYBER</option>
+            <option>CMO</option>
+            <option>RESERVISTS</option>
+        </select>
+
+        <label>Message</label>
+        <textarea></textarea>
+
+        <button class="btn" type="submit">Submit</button>
+        <button class="btn" type="reset">Clear Form</button>
+
+    </form>
+</div>
+
+<div class="section">
+    <h2>Useful Links</h2>
+
+    <a href="https://google.com" target="_blank">
+        Visit Chrome
+    </a>
+</div>
+
+</div>
+
+</body>
+</html>
+
